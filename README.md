@@ -113,6 +113,6 @@ No server required.
 
 ### 🙌 Credits
 
-Created by Swarup Lamsal
-Inspired by Spotify UI
-FontAwesome for Icons
+Created by Swarup Lamsal<br>
+Inspired by Spotify UI<br>
+FontAwesome for Icons<br>
