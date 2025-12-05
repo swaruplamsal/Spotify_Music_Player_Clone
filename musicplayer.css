@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap");
+
+body {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.Brand img {
+  width: 46px;
+  padding: 0 8px;
+}
+
+.Brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.35em;
+}
+
+.mainContainer {
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  transition: opacity 1s ease, visibility 1s ease; /* Added smooth transition */
+}
+
+.oldContent {
+  padding: 10px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.bottom {
+  position: sticky;
+  height: 90px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  padding: 30px 0 0 0;
+}
+
+.bottom .masterIcons {
+  display: inline-flex;
+}
+
+.bottom .masterIcons .icon {
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.bottom .masterIcons i {
+  margin: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.bottom .masterIcons .fa-circle-play:hover {
+  color: green;
+  transition: 0.25s ease color;
+}
+
+.bottom .masterIcons .fa-circle-pause:hover {
+  color: green;
+  transition: 0.25s ease color;
+}
+
+.bottom .masterIcons .fa-forward:hover {
+  color: green;
+  transition: 0.25s ease color;
+}
+
+.bottom .masterIcons .fa-forward-fast:hover {
+  color: green;
+  transition: 0.25s ease color;
+}
+
+.bottom .masterIcons .fa-backward:hover {
+  color: green;
+  transition: 0.25s ease color;
+}
+
+.bottom .masterIcons .fa-backward-fast:hover {
+  color: green;
+  transition: 0.25s ease color;
+}
+
+#player {
+  margin-top: 5px;
+}
+
+.songItem {
+  border: 2px white;
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.songItemPlay {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.songItem img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 17.5px;
+}
+
+.timestamp {
+  margin-right: 10px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.songItem:hover {
+  background-color: hsla(0, 0%, 30%, 0.411);
+}
+
+.songItem i {
+  cursor: pointer;
+}
+
+.song-info {
+  font-family: Varela Round, sans-serif;
+  position: absolute;
+  margin-top: 22px;
+  left: 18vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.span {
+  margin-top: 5px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+.volumeControl {
+  position: absolute;
+  left: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.volumeControl:hover #volumeLevel {
+  opacity: 1; /* Fade in */
+  visibility: visible;
+}
+
+.volumeControl:hover {
+  border-radius: 12px;
+  padding: 5px 6px;
+  margin: -5px -6px;
+  transition: 0.2s linear;
+  border-radius: 6px;
+}
+
+.volumeControl:hover .volumeIcon {
+  cursor: pointer;
+}
+
+#volumeIcon {
+  max-width: 16px;
+  cursor: pointer;
+}
+
+.songItem .songNames {
+  margin-left: 10px;
+}
+
+.homepage {
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 20px 30px 10px;
+  gap: 20px;
+}
+
+.leftSideBar {
+  flex: 1;
+  min-height: 70vh;
+  max-width: 10vw;
+  background-color: hsl(0, 0%, 10%);
+  left: 0;
+  border-radius: 8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: white;
+  padding: 5px;
+}
+
+.rightSiderBar {
+  flex: 3;
+  height: 70vh;
+  max-width: 20vw;
+  background-color: hsl(0, 0%, 10%);
+  overflow-y: scroll;
+  border-radius: 8px;
+  color: white;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+.homeContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.homeContent::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.homeContent::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.leftSideBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.leftSideBar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.leftSideBar::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.rightSiderBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.rightSiderBar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.rightSiderBar::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+#myProgressBar {
+  width: 50vw;
+  appearance: none;
+  transition: width 0.5s ease;
+  background: gray;
+  border-radius: 20px;
+  outline: none;
+}
+
+#myProgressBar::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 20px;
+}
+
+#myProgressBar::-webkit-slider-thumb {
+  appearance: none;
+}
+
+#myProgressBar:hover::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 6px;
+  margin-top: -3px;
+  cursor: pointer;
+}
+
+#myProgressBar:active::-webkit-slider-thumb {
+  background: lightgray;
+}
+
+#volumeLevel {
+  width: 10vw;
+  display: inline-block;
+  opacity: 0;
+  cursor: pointer;
+  margin-left: 7px;
+  transition: opacity 0.5s ease;
+  appearance: none;
+  background-color: hsl(0, 0%, 30%);
+  border-radius: 20px;
+}
+
+#volumeLevel::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 20px;
+}
+
+#volumeLevel::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 5px;
+  margin-top: -2.5px;
+}
+
+#rotateCover {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: rotateDisc 20s linear infinite;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+@keyframes rotateDisc {
+  from {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(630deg);
+  }
+}
+
+.homeContent {
+  flex: 2;
+  height: 70vh;
+  width: 70vw;
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+  background-position: center;
+  border-radius: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.collectionListNameContainer {
+  margin-top: 50px;
+}
+
+.collectionListName {
+  font-family: Ubuntu;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.collectionListName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.songCollection {
+  display: flex;
+  gap: 20px;
+  width: 850px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.individualSong {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 25px;
+  height: auto;
+  width: 300px;
+  cursor: pointer;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.individualSong:hover {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+}
+
+.individualSong:hover .collectionName {
+  text-decoration: underline;
+}
+
+.songCollectionImage {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.collectionName {
+  margin-top: 3px;
+  font-family: Ubuntu;
+  font-size: 1.2em;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+}
+
+.artistName {
+  font-size: 13px;
+  color: hsl(0, 0%, 60%);
+  font-weight: lighter;
+}
+
+.collectionHeader {
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 100%, 50%, 0.42) 30%,
+    hsl(0, 0%, 10%) 100%
+  ); /* Purple to black gradient */
+}
+.collectionHeaderInfo {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  padding: 50px 20px;
+}
+
+.accessInfo {
+  font-weight: bold;
+}
+
+#albumCollectionImage {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(0, 100%, 30%);
+  height: 35vh;
+  width: auto;
+}
+
+.collectionInfo {
+  margin-left: 30px;
+  font-family: Ubuntu;
+  display: flex;
+  flex-direction: column;
+}
+
+.collectionTitle {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.userMessage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  gap: 1px;
+}
+
+.userMessage img {
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#userName {
+  font-weight: bold;
+}
+
+#userName:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.collectionHeader .container {
+  background-color: rgba(0, 0, 0, 0.114);
+  padding: 30px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.fa-google-play {
+  max-width: 64px;
+}
+
+.fa-google-play:hover {
+  color: green;
+  transition: 0.25s ease-in-out color;
+  cursor: pointer;
+}
+
+.fa-shuffle:hover {
+  color: green;
+  transition: 0.25s ease-in-out color;
+  cursor: pointer;
+}
+
+.fa-circle-plus:hover {
+  color: green;
+  transition: 0.25s ease-in-out color;
+  cursor: pointer;
+}
+
+.fa-download:hover {
+  color: green;
+  transition: 0.25s ease-in-out color;
+  cursor: pointer;
+}
+
+.songItem {
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-family: Ubuntu;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.songItemPlay {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.songItemPlay:hover {
+  color: green;
+  transition: 0.25s ease-in-out color;
+  cursor: pointer;
+}
+
+.songItem img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 17.5px;
+}
+
+.songItem .songNames {
+  margin-left: 10px;
+}
+.timestamp {
+  margin-right: 10px;
+}
+
+.songsCollection {
+  padding-top: 30px;
+}
+
+#symbol {
+  padding-left: 20px;
+}
+
+#title {
+  padding-left: 55px;
+}
+
+#length {
+  position: relative;
+  left: 48vw;
+}
+
+#tableDivider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.collectionHeader .container {
+  background-color: rgba(0, 0, 0, 0.194);
+  padding: 30px;
+}
+
+.customColor {
+  font-family: Ubuntu;
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 100%, 50%, 0.42) 40px,
+    hsl(0, 0%, 10%) 150px
+  );
+  color: white;
+  padding: 20px;
+  background-attachment: fixed;
+}
+.homepageInitialButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.homepageOptions {
+  display: flex;
+  margin-left: 20px;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+  padding: 15px;
+  font-size: large;
+  border: none;
+  border-radius: 20px;
+}
+.homepageOptions:hover {
+  background-color: rgba(128, 128, 128, 0.537);
+  cursor: pointer;
+  transition: 0.5s ease background-color;
+}
+.homepageOptions.active {
+  background-color: white;
+  color: black;
+}
+
+.homepageAlbumCollections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.homepageCollectionItems {
+  display: flex;
+  align-items: center;
+  background-color: hsla(0, 0%, 30%, 0.396);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.homepageCollectionItems:hover {
+  background-color: hsla(0, 0%, 70%, 0.396);
+  transition: 0.5s ease background-color;
+  cursor: pointer;
+}
+
+.homepageCollectionItems:hover .gridItemIcons {
+  opacity: 1;
+}
+
+.homepageCollectionItems img {
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.artistOrAlbum {
+  margin-left: 10px;
+}
+
+.gridItemIcons {
+  margin-left: auto;
+  opacity: 0;
+  transition: 0.5s ease opacity;
+}
+
+i:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease transform;
+}
+
+.starterIcons {
+  margin-right: 8px;
+}
+
+.starterIcons:hover {
+  color: green;
+}
+
+.customColor2 {
+  background: linear-gradient(
+    to bottom,
+    hsla(189, 92%, 34%, 0.42) 40px,
+    hsl(0, 0%, 10%) 150px
+  );
+  padding: 20px;
+  background-attachment: fixed;
+}

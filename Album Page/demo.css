@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+body{
+   background-color: hsl(0, 0%, 10%); 
+}
+
+.collectionHomepage{
+    background-color: black;
+    color: white;
+    width: 60vw;
+    height: 90vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.collectionHeader{
+    background: linear-gradient(to bottom, hsla(0, 100%, 50%, 0.42)  30%, black 100%); /* Purple to black gradient */
+}
+.collectionHeaderInfo{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 50px 20px;
+}
+
+.accessInfo{
+    font-weight: bold;
+}
+
+#albumCollectionImage{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsl(0, 100%, 30%);
+    height: 250px;
+    width: 250px;
+}
+
+.collectionInfo{
+    margin-left: 30px;
+    font-family: Ubuntu;
+    display: flex;
+    flex-direction: column;
+}
+
+.collectionTitle{
+    font-size: 4em;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.userMessage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    gap: 1px;
+}
+
+.userMessage img{
+    border: none;
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#userName{
+    font-weight: bold;
+}
+
+#userName:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.collectionHeader .container{
+    background-color: rgba(0, 0, 0, 0.114);
+    padding: 30px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.fa-google-play{
+    max-width: 64px;
+}
+
+.fa-google-play:hover{
+    color: green;
+    transition: 0.25s ease-in-out color;
+    cursor: pointer;
+}
+
+.fa-shuffle:hover{
+    color: green;
+    transition: 0.25s ease-in-out color;
+    cursor: pointer;
+}
+
+.fa-circle-plus:hover{
+    color: green;
+    transition: 0.25s ease-in-out color;
+    cursor: pointer;
+}
+
+.fa-download:hover{
+    color: green;
+    transition: 0.25s ease-in-out color;
+    cursor: pointer;
+}
+
+.songItem{
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.songItemPlay{
+    align-self: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.songItemPlay:hover{
+    color: green;
+    transition: 0.25s ease-in-out color;
+    cursor: pointer;
+}
+
+.songItem img{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 17.5px;
+}
+
+.songItem .songNames{
+    margin-left: 10px;
+}
+.timestamp{
+    margin-right: 10px;
+}
+
+.songsCollection{
+    padding-top: 30px;
+}
+
+#symbol{
+    padding-left: 20px;
+}
+
+#title{
+    padding-left: 55px;
+}
+
+#length{
+    position: relative;
+    left: 43vw;
+}

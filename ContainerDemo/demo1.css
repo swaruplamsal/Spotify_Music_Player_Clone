@@ -1,0 +1,91 @@
+.content {
+  height: 98vh;
+  background-color: hsl(0, 0%, 10%);
+  overflow-y: scroll;
+}
+.customColor {
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 100%, 50%, 0.42) 40px,
+    hsl(0, 0%, 10%) 150px
+  );
+  color: white;
+  padding: 20px;
+  background-attachment: fixed;
+}
+.homepageInitialButtons {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.homepageOptions {
+  display: flex;
+  margin-left: 20px;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+  padding: 15px;
+  font-size: large;
+  border: none;
+  border-radius: 20px;
+}
+.homepageOptions:hover {
+  background-color: rgba(128, 128, 128, 0.537);
+  cursor: pointer;
+  transition: 0.5s ease background-color;
+}
+.homepageOptions.active {
+  background-color: white;
+  color: black;
+}
+
+.homepageAlbumCollections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.homepageCollectionItems {
+  display: flex;
+  align-items: center;
+  background-color: hsla(0, 0%, 50%, 0.396);
+  width: 100%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.homepageCollectionItems:hover {
+  background-color: hsla(0, 0%, 70%, 0.396);
+  transition: 0.5s ease background-color;
+  cursor: pointer;
+}
+
+.homepageCollectionItems:hover .gridItemIcons {
+  opacity: 1;
+}
+
+.homepageCollectionItems img {
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.artistOrAlbum {
+  margin-left: 10px;
+}
+
+.gridItemIcons {
+  margin-left: auto;
+  margin-right: 8px;
+  opacity: 0;
+  transition: 0.5s ease opacity;
+}
+
+i:hover {
+  color: green;
+  transform: scale(1.1);
+  transition: 0.2s ease transform;
+}
