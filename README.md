@@ -7,53 +7,53 @@ This project includes album collections, playlists, a full player control bar, a
 
 ### Homepage✅
 
-Top navigation bar with Spotify branding
+• Top navigation bar with Spotify branding
 
-Category filters: All, Music, Podcasts
+• Category filters: All, Music, Podcasts
 
-Album grids with hover play icons
+• Album grids with hover play icons
 
-Multiple mix collections (Pop, Rock, Indie, etc.)
+• Multiple mix collections (Pop, Rock, Indie, etc.)
 
-Responsive layout components
+• Responsive layout components
 
 ### 🎧 Playlist View
 
-Detailed playlist header with:
+• Detailed playlist header with:
 
-    Album art
+    • Album art
 
-    Playlist description
+    • Playlist description
 
-    User info (e.g., Made for Swarup Lamsal)
+    • User info (e.g., Made for Swarup Lamsal)
 
-Song list with:
+• Song list with:
 
-    Title
+    • Title
 
-    Artwork
+    • Artwork
 
-    Play button
+    • Play button
 
-    Duration
+    • Duration
 
-Action icons (Play, Shuffle, Add, Download)
+• Action icons (Play, Shuffle, Add, Download)
 
 ### ▶️ Music Player (Bottom Bar)
 
-Play / Pause
+• Play / Pause
 
-Previous / Next
+• Previous / Next
 
-Fast forward / rewind
+• Fast forward / rewind
 
-Dynamic progress bar
+• Dynamic progress bar
 
-Volume control with icon update
+• Volume control with icon update
 
-Rotating album cover animation
+• Rotating album cover animation
 
-Displays currently playing song
+• Displays currently playing song
 
 ### 📁 Project Structure
 
@@ -79,36 +79,37 @@ Spotify_Music_Player_Clone/
 
 ### 🛠️ Technologies Used
 
-HTML5 – Structure
+• HTML5 – Structure
 
-CSS3 – Styling & animations
+• CSS3 – Styling & animations
 
-JavaScript (ES6) – Functionality
+• JavaScript (ES6) – Functionality
 
-FontAwesome – Icons
+• FontAwesome – Icons
 
 ### 💡 How to Run the Project
 
-Clone the repository:
+1. Clone the repository:
 
-git clone https://github.com/yourusername/Spotify_Music_Player_Clone.git
+2. git clone https://github.com/yourusername/Spotify_Music_Player_Clone.git
 
-Open the project folder.
+3. Open the project folder.
 
-Run index.html directly in your browser.
+4. Run index.html directly in your browser.
+
 No server required.
 
 ### 📌 Features You Can Add Next
 
-Search bar
+• Search bar
 
-Local storage for recent songs
+• Local storage for recent songs
 
-Playlists created dynamically
+• Playlists created dynamically
 
-Dark/light theme toggle
+• Dark/light theme toggle
 
-Waveform visualizer
+• Waveform visualizer
 
 ### 🙌 Credits
 
