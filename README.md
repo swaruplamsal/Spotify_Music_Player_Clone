@@ -1,11 +1,11 @@
-# Spotify Music Player Clone🎵
+# 🎵Spotify Music Player Clone
 
 A front-end music player inspired by Spotify’s UI, built using HTML, CSS, and JavaScript.
 This project includes album collections, playlists, a full player control bar, and dynamic UI interactions.
 
-## Features🚀
+## 🚀Features
 
-### Homepage✅
+### ✅Homepage
 
 • Top navigation bar with Spotify branding
 
