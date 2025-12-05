@@ -57,21 +57,25 @@ Displays currently playing song
 
 ### 📁 Project Structure
 
-/
+```bash
+Spotify_Music_Player_Clone/
 ├── index.html
-├── musicplayer.css
-├── musicplayer.js
-├── Content/
-│ ├── Logo.png
-│ ├── 1.jpg
-│ ├── 2.jpg
-│ ├── 3.jpg
-│ ├── 4.jpg
-│ ├── 5.jpg
-│ ├── 1.mp3
-│ ├── 2.mp3
-│ ├── ...
-│ └── n.mp3
+├── style.css
+├── script.js
+├── assets/
+│   ├── images/
+│   └── icons/
+├── music/
+│   ├── 1.mp3
+│   ├── 2.mp3
+│   ├── 3.mp3
+│   └── ...
+├── components/
+│   ├── player.js
+│   ├── playlist.js
+│   └── ui.js
+└── README.md
+```
 
 ### 🛠️ Technologies Used
 
